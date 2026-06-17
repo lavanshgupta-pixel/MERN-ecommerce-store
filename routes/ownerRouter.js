@@ -125,7 +125,7 @@ router.get("/Products",isOwnerLoggedIn,(req,res)=>{
 // ownershop 
 router.get("/Shop", isOwnerLoggedIn , async (req,res)=>{
      let  products = await productModel.find();
-     res.render("OwnerShop",{products});
+     res.render("ownerShop",{products});
 }
 )
 
